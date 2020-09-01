@@ -1,0 +1,437 @@
+:root {
+  --primary-text-color: black;
+  --title-text-color: black;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primery-grey-color: #757575;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.page-header .flexbox {
+  align-items: center;
+  height: 80px;
+}
+
+.page-header {
+  height: 80px;
+}
+
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 9px;
+}
+
+.contact a:first-child {
+  margin-bottom: 8px;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* Лого */
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: black;
+  text-decoration-line: none;
+  margin-right: 93px;
+  display: block;
+}
+
+.logo-part {
+  color: var(--accent-color);
+}
+
+.logo-second-part {
+  color: #ffffff;
+}
+
+/* Линки */
+
+a {
+  text-decoration-line: none;
+  color: grey;
+}
+
+a:focus,
+a:hover {
+  color: var(--accent-color);
+}
+
+li {
+  list-style-type: none;
+}
+
+.mail {
+  color: var(--accent-color);
+}
+
+.mail:hover {
+  color: var(--accent-color);
+}
+
+.contact-header {
+  display: flex;
+  margin-left: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-item {
+  color: var(--primary-text-color);
+}
+
+nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.studio {
+  color: var(--accent-color);
+}
+
+.studio:hover {
+  color: var(--accent-color);
+}
+
+.studio-link {
+  color: black;
+}
+
+.studio-link:hover {
+  color: var(--accent-color);
+}
+
+.portfolio-link {
+  color: black;
+}
+
+/* Заголовки */
+
+.hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 30px;
+}
+
+.hero {
+  text-align: center;
+  background-color: #2f303a;
+  width: auto;
+  padding-top: 200px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  font-style: normal;
+
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--primery-grey-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.activity {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.activity-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Преимущества */
+
+.advantages {
+  padding-top: 94px;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.benefits {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Команда */
+
+.name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.person-information {
+  margin-bottom: 30px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.team-item {
+  text-align: center;
+  background-color: #ffffff;
+  height: 368px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+
+.team-section {
+  background-color: #f5f4fa;
+  width: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Контакты */
+
+address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.address-container {
+  display: block;
+}
+
+.contact {
+  color: var(--accent-color);
+  display: block;
+}
+
+.contact-item {
+  color: var(--primery-grey-color);
+}
+
+/* Кнопки */
+
+button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: black;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 22px;
+}
+
+button:focus,
+button:hover {
+  color: white;
+  background-color: var(--accent-color);
+}
+
+.main-button {
+  font-family: Roboto, sans-serif;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.9;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  border-radius: 4px;
+  margin-bottom: 200px;
+  border: none;
+}
+
+.portfolio {
+  color: var(--accent-color);
+}
+
+.footer-address .logo {
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+/* Работы */
+
+.works {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2.5;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+.logo-second-part {
+  color: #ffffff;
+}
+
+/* Портфолио */
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.button-section {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.first-button {
+  background-color: #2196f3;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.work-section {
+  padding-bottom: 78px;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.work-item {
+  width: calc((100% - 60px) / 3);
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.work .work-item img {
+  width: 100%;
+  height: auto;
+}
+
+.work-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.work-information {
+  margin-left: 24px;
+}
+
+.contact {
+  margin-top: 9px;
+}
