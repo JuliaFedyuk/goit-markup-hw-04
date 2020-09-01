@@ -234,6 +234,35 @@ p {
   margin-right: 30px;
 }
 
+.advantages-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+
+  margin-bottom: 30px;
+}
+
+.advantages-item:nth-child(1)::before {
+  background-image: url(../pictures/satelit.svg);
+}
+
+.advantages-item:nth-child(2)::before {
+  background-image: url(../pictures/clock.svg);
+}
+
+.advantages-item:nth-child(3)::before {
+  background-image: url(../pictures/monitor.svg);
+}
+
+.advantages-item:nth-child(4)::before {
+  background-image: url(../pictures/astronaut.svg);
+}
+
 /* Команда */
 
 .name {
