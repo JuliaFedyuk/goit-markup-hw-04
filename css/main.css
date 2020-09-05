@@ -180,7 +180,7 @@ nav {
 
 /* Заголовки */
 
-.hero {
+.hero-section {
   max-width: 1600px;
   height: 600px;
   margin-right: auto;
@@ -188,8 +188,12 @@ nav {
   background-size: cover;
   background-position: center;
   background: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
-  background-image: url(../pictures/hero_img.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../pictures/hero_img.jpg);
 }
 
 .hero-title {
