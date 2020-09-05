@@ -36,6 +36,8 @@ body {
   display: flex;
 }
 
+/* Шапка */
+
 .page-header .flexbox {
   align-items: center;
   height: 80px;
@@ -43,12 +45,6 @@ body {
 
 .page-header {
   height: 80px;
-}
-
-footer .contact {
-  display: flex;
-  flex-direction: column;
-  margin-top: 9px;
 }
 
 .contact a:first-child {
@@ -150,13 +146,6 @@ nav {
   color: black;
 }
 
-.mail-icon {
-  height: 12px;
-  width: 16px;
-  margin-right: 10px;
-  fill: var(--primery-grey-color);
-}
-
 .contact-item {
   display: flex;
   justify-content: center;
@@ -167,6 +156,14 @@ nav {
 .contact-link {
   display: flex;
   align-items: center;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.contact-icon {
+  fill: var(--primery-grey-color);
 }
 
 .contact-item:hover {
@@ -184,7 +181,14 @@ nav {
 /* Заголовки */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: cover;
+  background-position: center;
   background: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
   background-image: url(../pictures/hero_img.jpg);
 }
 
@@ -374,6 +378,14 @@ p {
   display: flex;
 }
 
+.social-icon-item:hover {
+  color: var(--accent-color);
+}
+.social-icon-item:hover svg {
+  color: var(--accent-color);
+  fill: var(--primary-white-color);
+}
+
 .clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -403,7 +415,10 @@ p {
 }
 
 .regular-customers-item:hover {
-  border: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.regular-customers-item:hover svg {
+  fill: var(--accent-color);
 }
 
 /* Контакты */
@@ -574,6 +589,12 @@ ul {
 }
 
 /* Футер */
+
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 9px;
+}
 
 .footer-part {
   display: block;
