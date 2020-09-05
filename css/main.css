@@ -203,7 +203,7 @@ nav {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-white-color);
 
   margin-bottom: 30px;
 }
@@ -229,9 +229,13 @@ h3 {
   line-height: 1.1;
   letter-spacing: 0.03em;
   font-style: normal;
-  text-transform: uppercase;
 
   margin-bottom: 10px;
+}
+
+.footer-title {
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 
 p {
@@ -261,16 +265,16 @@ p {
   padding-top: 94px;
 }
 
-.advantages-list {
-  display: flex;
-  justify-content: space-around;
-}
-
 .benefits {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-around;
 }
 
 .advantages-item:not(:last-child) {
@@ -586,6 +590,7 @@ ul {
 
 .work-information {
   margin-left: 24px;
+  margin-bottom: 20px;
 }
 
 .contact {
